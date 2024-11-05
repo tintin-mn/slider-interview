@@ -1,0 +1,30 @@
+@import '/public/fonts/index.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide div {
+    transition: all 0.2s ease-in;
+}
+
+.swiper-slide-active div {
+    scale: 1;
+    transform: translateY(200px);
+}
+
+.swiper-slide-prev div,
+.swiper-slide-next div {
+    scale: 60%;
+    opacity: 50%;
+}
+
+.swiper-slide-prev .links,
+.swiper-slide-next .links {
+display: none
+}
